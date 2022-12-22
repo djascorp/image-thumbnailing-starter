@@ -42,7 +42,7 @@ class ImageProcessing {
   }
 
   public static getImage (img: string): string {
-    return join(__dirname, '../../', '/images', img)
+    return join(__dirname, '../../', '/full', img)
   }
 
   public static getThumb (img: string): string {
