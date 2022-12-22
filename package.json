@@ -1,0 +1,64 @@
+{
+  "name": "image-thumbnailing-starter",
+  "version": "1.0.0",
+  "description": "Project for Backend Development with Node.js That display image or his thumbnail",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "jasmine": "jasmine",
+    "start": "nodemon src/index.ts",
+    "lint": "eslint ./src",
+    "lint-fix": "eslint ./src --fix",
+    "prettier": "npx prettier --write \"**/*.{ts,tsx}\"",
+    "test": "npm run build && npm run jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djascorp/image-thumbnailing-starter.git"
+  },
+  "keywords": [
+    "Typescript",
+    "Node.Js",
+    "Starter",
+    "Express",
+    "Image",
+    "Processing",
+    "Udacity",
+    "Nanodegree"
+  ],
+  "author": "Djasnive",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djascorp/image-thumbnailing-starter/issues"
+  },
+  "homepage": "https://github.com/djascorp/image-thumbnailing-starter#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "jasmine": "^4.5.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "sharp": "^0.31.2",
+    "supertest": "^6.3.3",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.15",
+    "@types/jasmine": "^4.3.1",
+    "@types/node": "^18.11.17",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.46.1",
+    "@typescript-eslint/parser": "^5.46.1",
+    "eslint": "^8.30.0",
+    "eslint-config-standard-with-typescript": "^24.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.6.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.1",
+    "typescript": "^4.9.4"
+  },
+  "exclude": [
+    "node_modules",
+    "./dist",
+    "spec"
+  ]
+}
