@@ -1,17 +1,15 @@
-import express, { Express } from "express";
-import { imageRouter } from "./routes/images";
+import express, { Express } from 'express'
+import { routes } from './routes/index.router'
 
-const PORT = 3000;
+const PORT = 3000
 
-const app: Express = express();
+const app: Express = express()
 
-app.get("/", (req, res) => {
-  // res.send('Listen to server')
-  res.sendStatus(200);
-});
+app.use(routes);
 
 app.listen(PORT, () => {
-  console.log(`server started at localhost:${PORT}`);
-});
-app.use('/images',imageRouter);
-export default app;
+  console.log(`server started at localhost:${PORT}`)
+})
+
+
+export default app
