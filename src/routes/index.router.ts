@@ -1,13 +1,12 @@
 import express, { Router } from 'express'
 import { imageRouter } from './images.router'
 
-const routes:Router = express.Router();
+const routes: Router = express.Router()
 
-routes.get('/', (req, res) => {
-    // res.send('Listen to server')
-    res.sendStatus(200)
+routes.get('/', (req: express.Request, res: express.Response) => {
+  res.status(200).send('Listen to API')
 })
 
-routes.use('/api', imageRouter)
+routes.use('/images', imageRouter)
 
-export {routes}
+export { routes }

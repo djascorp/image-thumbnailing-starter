@@ -1,11 +1,11 @@
 import supertest from 'supertest'
-import app from '../index'
+import app from '../../index'
 
 const request = supertest(app)
-describe('My Server', () => {
-  it('It should respond with 200 status code on /', (done) => {
+describe('My API', () => {
+  it('It should respond with 200 status code on /api', (done) => {
     request
-      .get('/')
+      .get('/api')
       .then((response) => {
         expect(response.status).toBe(200)
         done()
